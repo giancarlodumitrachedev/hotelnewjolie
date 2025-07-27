@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria | Hotel New Jolie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.svg" alt="Hotel New Jolie">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Homepage</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link">Servizi</a></li>
+                <li class="nav-item"><a href="camere.html" class="nav-link">Camere</a></li>
+                <li class="nav-item"><a href="galleria.html" class="nav-link active">Galleria</a></li>
+                <li class="nav-item"><a href="offerte.html" class="nav-link">Offerte</a></li>
+                <li class="nav-item"><a href="dintorni.html" class="nav-link">Dintorni</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link contact-button">Richiedi Info</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery-hero">
+            <div class="hero-background-image" style="background-image: url('https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-2.jpg');"></div>
+            <div class="hero-content">
+                <h1>Uno Sguardo al Vostro Soggiorno</h1>
+                <p>Esplorate l'Hotel New Jolie attraverso le nostre immagini.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="content-section">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Tutte</button>
+                <button class="filter-btn" data-filter="hotel">Hotel</button>
+                <button class="filter-btn" data-filter="camere">Camere</button>
+                <button class="filter-btn" data-filter="colazione">Colazione</button>
+            </div>
+
+            <div class="gallery-container">
+                <a href="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-3.jpg" class="gallery-item" data-category="hotel"><img src="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-3.jpg" alt="Esterno Hotel"></a>
+                <a href="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-1.jpg" class="gallery-item" data-category="hotel"><img src="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-1.jpg" alt="Piscina Hotel"></a>
+                <a href="https://www.hotelnewjolierimini.it/ATImg/gallery/fotogallery/gall_9028/9028_14929_325013.jpeg" class="gallery-item" data-category="camere"><img src="https://www.hotelnewjolierimini.it/ATImg/gallery/fotogallery/gall_9028/9028_14929_325013.jpeg" alt="Camera 1"></a>
+                <a href="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-6.jpg" class="gallery-item" data-category="camere"><img src="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-6.jpg" alt="Camera 2"></a>
+                <a href="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-7.jpg" class="gallery-item" data-category="colazione"><img src="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-7.jpg" alt="Colazione 1"></a>
+                <a href="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-5.jpg" class="gallery-item" data-category="colazione"><img src="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-5.jpg" alt="Colazione 2"></a>
+                <a href="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-2.jpg" class="gallery-item" data-category="hotel"><img src="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-2.jpg" alt="Dettaglio Hotel"></a>
+                <a href="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-4.jpg" class="gallery-item" data-category="hotel"><img src="https://www.hotelnewjolierimini.it/inc/scripts/source/www.hotelnewjolierimini.it/crp1920x740-sf-index-4.jpg" alt="Vista Hotel"></a>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox-overlay" class="hidden">
+        <span id="lightbox-close">×</span>
+        <img id="lightbox-image" src="" alt="Immagine ingrandita">
+        <span id="lightbox-prev">❮</span>
+        <span id="lightbox-next">❯</span>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#"><img src="logo.svg" alt="Hotel New Jolie Logo" class="footer-logo"></a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-right">
+                <div class="footer-contact-info">
+                    <p>Viale Tripoli, 197, 47921 Rimini (RN)</p>
+                    <p>Phone: +39 0541 391040 | Mobile: +39 344 2370305</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/newjolie_rimini/" target="_blank"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.784.297-1.457.718-2.126 1.387C1.344 2.694.92 3.367.63 4.14c-.3.765-.5 1.635-.558 2.913-.058 1.28-.072 1.687-.072 4.947s.015 3.667.072 4.947c.06 1.278.258 2.148.558 2.913.3.765.718 1.457 1.387 2.126.67.67 1.343 1.088 2.126 1.387.765.3 1.635.5 2.913.558 1.28.058 1.687.072 4.947.072s3.667-.015 4.947-.072c1.278-.06 2.148-.258 2.913-.558.784-.3 1.457-.718 2.126-1.387.67-.67 1.088-1.343 1.387-2.126.3-.765-.5-1.635.558-2.913.058-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.278-.258-2.148-.558-2.913-.3-.765-.718-1.457-1.387-2.126C21.31 1.344 20.637.92 19.86.63c-.765-.3-1.635-.5-2.913-.558C15.667.015 15.26 0 12 0zm0 2.16c3.203 0 3.585.012 4.85.07 1.17.055 1.805.248 2.227.415.562.217.96.477 1.382.896.419.42.679.82.896 1.382.167.422.36 1.057.413 2.227.058 1.265.07 1.646.07 4.85s-.012 3.585-.07 4.85c-.055 1.17-.248 1.805-.413 2.227-.217.562-.477.96-.896 1.382-.42.419-.82.679-1.382.896-.422.167-1.057.36-2.227.413-1.265.058-1.646.07-4.85.07s-3.585-.012-4.85-.07c-1.17-.055-1.805-.248-2.227-.413-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.82-.896-1.382-.167-.422-.36-1.057-.413-2.227-.058-1.265-.07-1.646-.07-4.85s.012-3.585.07-4.85c.055-1.17.248-1.805.413-2.227.217.562.477.96.896 1.382.42.419.82.679 1.382.896.422-.167 1.057-.36 2.227-.413C8.415 2.172 8.797 2.16 12 2.16zm0 5.48c-3.037 0-5.5 2.463-5.5 5.5s2.463 5.5 5.5 5.5 5.5-2.463 5.5-5.5-2.463-5.5-5.5-5.5zm0 8.84c-1.85 0-3.35-1.5-3.35-3.35s1.5-3.35 3.35-3.35 3.35 1.5 3.35 3.35-1.5 3.35-3.35 3.35zm6.405-9.88c0 .76-.615 1.375-1.375 1.375S15.655 8.4 15.655 7.64s.615-1.375 1.375-1.375 1.375.615 1.375 1.375z"/></svg></a>
+                    <a href="https://www.facebook.com/hotelnewjolierimini" target="_blank"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>P.Iva 04365070400 - Privacy & Cookie Policy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
