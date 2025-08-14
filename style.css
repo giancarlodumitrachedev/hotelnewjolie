@@ -1379,7 +1379,6 @@ body.no-scroll {
     }
     .location-map {
         order: 2; /* Map comes second */
-        background-image: url('https://i.imgur.com/e5g3xz1.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
